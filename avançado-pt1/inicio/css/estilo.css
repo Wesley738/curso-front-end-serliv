@@ -1,0 +1,137 @@
+body {
+    font-family: "Viaoda Libre";
+    font-size: 62.5%;
+}
+
+p {
+    font-family: "Roboto";
+    font-size: 1.1em;
+}
+
+nav {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #162028;
+}
+
+.logo {
+    font-weight: 100;
+    color: white;
+    margin: 0.4rem 0 0.4rem 6em;
+    font-size: 3em;
+}
+
+.menu {
+    font-family: "Roboto";
+    display: flex;
+    list-style: none;
+    gap: 4em;
+    padding: 0;
+    margin-right: 4em;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #4f6677;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    font-size: 1.2em;
+}
+
+.menu a:hover {
+    color: #97bbd4;
+}
+
+header img {
+    width: 100%;
+}
+
+.apresentacao-estilos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.apresentacao-estilos p {
+    width: 45%;
+    margin: 0 auto 3em auto;
+    line-height: 2.3;
+}
+
+.subtitulo-principal {
+    text-align: center;
+    width: 60%;
+    margin: 3em auto 1em auto;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.estilos {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin: 2em auto 4em;
+}
+
+.estilos-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estilos-item h3 {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1pt;
+    margin: 1.6em auto 0;
+}
+
+.estilos-item img {
+    width: 180px;
+}
+
+.apresentacao-convencimento {
+    background-color: #003d52;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 90vw;
+    height: 90vh;
+    color: white;
+    padding: 5em;
+    margin: 0;
+}
+
+.subtitulo-principal__destacado {
+    font-size: 5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+.apresentacao-convencimento p {
+    font-size: 1.2em;
+    width: 60%;
+    line-height: 1.5;
+}
+
+footer {
+    margin: 0;
+    background-color: #0b171f;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: auto;
+    color: #6f8597;
+    text-align: center;
+    letter-spacing: 2pt;
+}

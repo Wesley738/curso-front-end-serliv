@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(235, 189, 133);
+            border: 4px solid brown;
+            margin: 100px auto;
+            outline: 7px solid brown;
+            outline-offset: 3px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            text-transform: uppercase;
+
+            /*Animação*/
+            transition-property: width; /*ESCOLHO A PROPRIEDADE A SER ANIMADA*/
+            transition-duration: 500ms; /*ESCOLHO A DURAÇÃO DA ANIMAÇÃO*/
+            transition-timing-function: cubic-bezier(.74,-0.01,.33,1.27); /*ESCOLHO A ACELERAÇÃO E DESACELERAÇÃO DA ANIMAÇÃO*/
+            transition-delay: 0.4s; /*ESCOLHO QUANTO TEMPO IRÁ DEMORAR PARA OCORRER A ANIMAÇÃO*/
+
+            /* atalhos 
+            transition: property(all) duration(0s) function(ease) delay(0s)*/
+            transition: all  0.4s cubic-bezier(.74,-0.01,.33,1.27) 0.2s;
+
+        }
+
+        div:hover {
+            width: 400px;
+            background-color: rgb(139, 81, 9);
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>outline</p>
+    </div>
+</body>
+</html>

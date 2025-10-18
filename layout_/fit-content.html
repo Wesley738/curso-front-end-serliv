@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit Content</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 15px;
+            width: 300px;
+            margin-bottom: 16px;
+        }
+
+        .item {
+            background-color: brown;
+            margin-bottom: 8px;
+            padding: 5px;
+
+            /*width: fit-content; faz com que a largura se adapte ao tamanho do conteúdo interno*/
+        }
+
+        .fit-content .item {
+            width: fit-content;
+        }
+
+        .min-content .item {
+            width: min-content; /*Vai colocar a largura do box igual a largura do maior elemento interno, ou seja, o menor conteúdo possível*/
+        }
+
+        .max-content .item {
+            width: max-content; /*Vai colocar a maior largura possível, sem forçar o conteúdo interno a quebrar linha por exemplo*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container fit-content">
+        <div class="item">lorem xxxxxxx</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eligendi?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores numquam qui fuga ut eos impedit esse nobis. Aliquam cumque fuga deserunt maiores ratione eaque sit!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, natus blanditiis atque sit vel magnam consectetur iste perspiciatis cumque vero hic et quos repellat deserunt molestias pariatur esse, doloremque totam voluptatem. Saepe libero, quod vel voluptate aut ad ipsam itaque sunt sit cupiditate obcaecati minus necessitatibus. Quas repellendus fugiat obcaecati modi minus cumque repellat inventore culpa pariatur provident, molestias sit distinctio expedita cupiditate adipisci, porro est vero amet accusantium at ratione quidem et! Similique, vero?</div>
+    </div>
+
+    <div class="container min-content">
+        <div class="item">lorem xxxxxxx</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eligendi?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores numquam qui fuga ut eos impedit esse nobis. Aliquam cumque fuga deserunt maiores ratione eaque sit!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, natus blanditiis atque sit vel magnam consectetur iste perspiciatis cumque vero hic et quos repellat deserunt molestias pariatur esse, doloremque totam voluptatem. Saepe libero, quod vel voluptate aut ad ipsam itaque sunt sit cupiditate obcaecati minus necessitatibus. Quas repellendus fugiat obcaecati modi minus cumque repellat inventore culpa pariatur provident, molestias sit distinctio expedita cupiditate adipisci, porro est vero amet accusantium at ratione quidem et! Similique, vero?</div>
+    </div>
+
+    <div class="container max-content">
+        <div class="item">lorem xxxxxxx</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eligendi?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores numquam qui fuga ut eos impedit esse nobis. Aliquam cumque fuga deserunt maiores ratione eaque sit!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, natus blanditiis atque sit vel magnam consectetur iste perspiciatis cumque vero hic et quos repellat deserunt molestias pariatur esse, doloremque totam voluptatem. Saepe libero, quod vel voluptate aut ad ipsam itaque sunt sit cupiditate obcaecati minus necessitatibus. Quas repellendus fugiat obcaecati modi minus cumque repellat inventore culpa pariatur provident, molestias sit distinctio expedita cupiditate adipisci, porro est vero amet accusantium at ratione quidem et! Similique, vero?</div>
+    </div>
+</body>
+</html>

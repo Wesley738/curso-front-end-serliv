@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f1025;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+}
+
+#container-list {
+    background-color: aliceblue;
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px #ffffff80;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    border: 1px solid #eee;
+    padding: 16px;
+}
+
+.list-item:hover {
+    background-color: #e8e8e8;
+}
+
+.list-item__perfil img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.list-item__dados {
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.list-item__nome {
+    font-size: 24px;
+    color: #424242;
+    margin: 0;
+}
+
+.list-item__email {
+    margin: 5px 0 0;
+    color: #aaa;
+}
+
+.list-item__actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0;
+}
+
+.list-item:hover .list-item__actions {
+    opacity: 0.3;
+}

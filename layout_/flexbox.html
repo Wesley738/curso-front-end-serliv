@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        .flexbox {
+            height: 250px;
+            border: 3px solid rebeccapurple;
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        .flexbox div {
+            border: 2px solid violet;
+            width: 150px;
+            margin: 15px;
+            padding: 10px;
+        }
+
+        .flex-container1 {
+            /* flex-wrap: wrap;
+            flex-direction: row; */
+            flex-flow: row wrap;
+        }
+
+        .flex-container2 {
+            /* justify-content: flex-start;  Padrão: os elementos se organizam a partir do começo*/
+            /*justify-content: flex-end; Os elementos se organizam a partir do final*/
+            /*justify-content: space-evenly; Os elementos são distribuídos no espaço de tal forma haja o mesmo espaço na esquerda e direita do elemento*/
+
+            /*justify-content: space-around; Distribui os elementos no espaço fornecido e coloca a 1/2 do espaço entre os elementos, depois do último e antes do primeiro*/
+
+            /*justify-content: space-between; Distribui os elementos do espaço disponível, sem deixar nenhum espaço nas extremidades*/
+            
+            justify-content: space-evenly;
+        }
+
+        .flex-container2 div {
+            width: 30px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .flex-container3 {
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .flex-container3 div {
+            width: 30px;
+            margin: 0;
+        }
+        
+        .flex-container4 {
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
+        .flex-container4 div {
+            width: 30px;
+            margin: 0;
+        }
+
+        .flex-container5 {
+            justify-content: center;
+            align-items: flex-end; /*trabalha com conjunto de elementos que são só de uma linha, ou seja, não há quebra de linha (nowrap)*/
+            align-content: flex-start; /*trabalha com conjunto de elementos que são de mais de uma linha, ou seja, há quebra de linha (wrap)*/
+            flex-wrap: wrap; /*quebra a linha e "habilita" o align-content*/
+        }
+
+        .flex-container5 div {
+            width: 100px;
+        }
+
+        .flex-container6 {
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: column; /*O "flex-direction" vai modificar a orientação dos eixos x(main) e y(cross)*/
+            height: 400px;
+        }
+
+        .flex-container6 div {
+            background-color: #ec3a85;
+            width: 30px;
+            height: 30px;
+        }
+
+        .flex-container7 {
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 400px;
+        }
+
+        .flex-container7 div {
+            background-color: #ec3a85;
+            width: 50px;
+            height: 50px;
+        }
+
+        .flex-container7 .div2 {
+            flex-basis: 200px;
+        }
+
+        .flex-container8 {
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .flex-container8 div {
+            width: 20px; /*largura dos elementos*/
+            background-color: rgb(86, 86, 194);
+            margin: 0;
+        }
+
+        .flex-container8 .div2 {
+            flex-grow: 1; /*Vai pegar o espaço sobrando na horizontal e adicionar a largura do elemento diretamente proporcional ao número colocado */
+        }
+
+        .flex-container8 .div4 {
+            flex-grow: 3;
+        }
+
+        .flex-container9 {
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .flex-container9 div {
+            flex-basis: 150px;
+            background-color: aquamarine;
+            margin: 0;
+        }
+
+        .flex-container9 .div3 {
+            flex-shrink: 2; /*Faz o inverso do "flex-grow", ele tira o espaço interno do elemento e joga para os outros de fora a medida que o tamanho da janela vai caindo*/
+
+            flex: 1 3 150px
+            /*Ordem do "flex": grow shrink basis*/
+        }
+
+        .flex-container10 {
+            flex-direction: column;
+            height: 500px;
+        }
+
+        .flex-container10 div {
+            background-color: blueviolet;
+            font-size: 36px;
+            color: antiquewhite;
+        }
+
+        .flex-container10 .div2 {
+            order: 2;
+            align-self: center;
+        }
+
+        .flex-container10 .div1 {
+            order: 1;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    
+    <div class="flexbox flex-container4">
+        <div class="div1">1</div>
+        <div class="div2" style="font-size: 36px;">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container6">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container7">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container8">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container9">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container10">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+</body>
+</html>
