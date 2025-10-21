@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #fed001;
+}
+
+html {
+    /* font-size: 62.5%; ESTOU MUDANDO O REM: 10px
+    font-weight: 400;
+    font-family: "Inter", sans-serif; */
+    font: 400 62.5% 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+p, a {
+    font-size: 1.6rem;
+}
+
+nav a {
+    color: inherit; /*HERDA DO ELEMENTO PAI QUE TEM COR DEFINIDA, NESSE CASO O ELEMENTO "wrapperContainer-dark" que tem cor #fafafa*/
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1.6rem 4.6rem;
+    color: black;
+}
+
+.wrapperContainer-dark {
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+
+.wrapperContainer-light {
+    background-color: #fafafa;
+}
+
+.wrapperContainer-dark2 {
+    background-color: #003464;
+    color: #fafafa;
+}
+
+.container {
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    padding: 2rem 0;
+}
+
+.header_nav a {
+    padding: 0.75em 1.15em;
+    border: solid 1px;
+    text-decoration: none;
+}
+
+.header_nav a:hover {
+    background-color: black;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+}
+
+.wrapperContainer-hero {
+    background-image: linear-gradient(white, rgb(248, 248, 68));
+}
+
+.heroBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
+
+.hero_title {
+    margin-bottom: 4rem;
+}
