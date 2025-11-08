@@ -13,12 +13,30 @@ h1 {
     font-size: 4.8rem;
 }
 
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
 p, a {
     font-size: 1.6rem;
 }
 
 nav a {
     color: inherit; /*HERDA DO ELEMENTO PAI QUE TEM COR DEFINIDA, NESSE CASO O ELEMENTO "wrapperContainer-dark" que tem cor #fafafa*/
+}
+
+.section_title {
+    padding: 3.5rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+.section_btn {
+    margin: 7rem 0;
 }
 
 .upper {
@@ -33,6 +51,10 @@ nav a {
     text-decoration: none;
     padding: 1.6rem 4.6rem;
     color: black;
+}
+
+.wrapperContainer {
+    padding-top: 1px;
 }
 
 .wrapperContainer-dark {
@@ -91,4 +113,43 @@ nav a {
 
 .hero_title {
     margin-bottom: 4rem;
+}
+
+.cursos {
+    text-align: center;
+}
+
+.cursosContainer {
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+}
+
+.cursosContainer h3 {
+    font-size: 2.4rem;
+}
+
+.cursosContainer p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.cursos_card_content {
+    padding: 1rem 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    border-top: transparent;
+}
+
+.curso_card {
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; */
+    flex: 1;
+}
+
+.curso_card img {
+    display: block;
+    width: 100%;
 }
