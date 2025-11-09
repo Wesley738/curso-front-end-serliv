@@ -153,3 +153,19 @@ nav a {
     display: block;
     width: 100%;
 }
+
+.escola {
+    display: flex;
+    gap: 6rem;
+    padding-top: 6rem;
+}
+
+.escola h2 {
+    font-size: 3.2rem;
+    margin-top: 3rem;
+}
+
+.escola p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
