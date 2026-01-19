@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulário</legend>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <label>
+                <input type="radio" name="radio" id="">Sim
+            </label>
+            <label>
+                <input type="radio" name="radio" id="">Não
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Área de Interesse</legend>
+            <select name="linguagem" required multiple size="6">
+                <option value="">Selecione</option>
+                <optgroup label="Mais populares">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="js">JavaScript</option>
+                    <option value="php">PHP</option>
+                </optgroup>
+                <optgroup label="Menos populares">
+                    <option value="c#">C#</option>
+                    <option value="go">Go</option>
+                    <option value="ruby">Ruby</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <input type="text" list="linguagens">
+            <datalist id="linguagens">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Java">
+                <option value="Python">
+                <option value="C">
+                <option value="Flutter">
+                <option value="C++">
+                <option value="C#">
+                <option value="Ruby">
+                <option value="Go">
+                <option value="PHP">
+                <option value="Schem">
+                <option value="Kotlin">
+            </datalist>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
