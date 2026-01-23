@@ -1,0 +1,107 @@
+body {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Montserrat';
+}
+
+form {
+    background-color: white;
+    border-left: 7px solid #075f6d;
+    padding: 1.5em 1em;
+}
+
+fieldset {
+    border: none;
+    min-width: 500px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    outline: 0;
+    border: none;
+}
+
+
+.ttForm {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 300;
+    margin: 0.9em 0 1.6em;
+}
+
+.ttCampo {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.campoInserir {
+    padding: 0.6em 0.6em 0.6em 0;
+    border-bottom: 2px solid #133031;
+    transition: padding 0.1s ease;
+    margin-bottom: 2.4em;
+    font-size: 1em;
+    font-family: 'Montserrat';
+}
+
+.campoInserir:focus {
+    padding: 0.6em;
+    border-bottom: 2px solid #8a8a8a;
+}
+
+.campoInserir:invalid:focus {
+    border-bottom: 2px solid #bb4242;
+}
+
+.campoInserir:valid:focus {
+    border-bottom: 2px solid #42b7bb;
+}
+
+.rodape_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_login {
+    padding: 0.6em 1em;
+    background-color: #075f6d;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.btn_login:hover {
+    background-color: white;
+    outline: 1px solid #075f6d;
+    color: #075f6d;
+}
+
+.btn_cadastrese {
+    text-decoration: none;
+    font-weight: 500;
+    color: #075f6d;
+    font-size: 0.9em;
+}
+
+.btn_cadastrese:hover {
+    text-decoration: underline;
+}
+
+.esqueciSenha {
+    font-size: 0.7em;
+    color: #075f6d;
+    font-weight: 300;
+}
+
+.esqueciSenha:hover {
+    font-weight: 400;
+}

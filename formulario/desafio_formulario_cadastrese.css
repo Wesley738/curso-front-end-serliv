@@ -1,0 +1,100 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+.form {
+    background-color: white;
+    border-left: 7px solid #075f6d;
+    padding: 1.5em 1em;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    min-width: 540px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    outline: 0;
+}
+
+.ttForm {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 300;
+    padding: 0;
+    margin: 0.9em 0 1.6em;
+}
+
+.ttInserir {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin: 0;
+    font-weight: 300;
+}
+
+.campo_inserir {
+    border-bottom: 2px solid #133031;
+    padding: 0.6em 0.6em 0.6em 0;
+    transition: padding 0.1s ease;
+    margin-bottom: 2.4em;
+    font-size: 1em;
+    font-family: 'Montserrat';
+}
+
+.campo_inserir:focus {
+    padding: 0.6em;
+    border-bottom: 2px solid #8a8a8a;
+}
+
+.campo_inserir:invalid:focus {
+    border-bottom: 2px solid #bb4242;
+}
+
+.campo_inserir:valid:focus {
+    border-bottom: 2px solid #42b7bb;
+}
+
+.rodape_form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_cadastrese {
+    font-size: 0.8em;
+}
+
+.link_cadastrese a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #0f8395;
+}
+
+.link_cadastrese a:hover {
+    text-decoration: underline;
+}
+
+.btn_cadastrese {
+    padding: 0.6em 1em;
+    background-color: #075f6d;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn_cadastrese:hover {
+    outline: 1px solid #075f6d;
+    background-color: white;
+    color: #075f6d;
+}
