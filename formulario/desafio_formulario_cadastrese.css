@@ -91,6 +91,7 @@ input {
     font-family: 'Montserrat';
     font-weight: 500;
     cursor: pointer;
+    transition: all .2s ease;
 }
 
 .btn_cadastrese:hover {
