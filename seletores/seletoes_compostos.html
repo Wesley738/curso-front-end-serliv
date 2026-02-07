@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        body {
+            width: 35%;
+        }
+        article {
+            outline: 3px dashed royalblue;
+        }
+
+        article a { /*Todo 'a' que está dentro de 'article'*/
+            color: chartreuse; 
+        }
+
+        article a > b { /*Todo 'b' que é irmão direto de todo 'a' que está dentro de 'article'*/
+            color: aqua;
+        }
+
+        h3 + p { /*'p' que está imediatamente após 'h3'*/
+            background-color: coral;
+        }
+
+        h3 ~ p { /*Os próximos 'p' que são irmãos de 'h3'*/
+            border: 2px solid rebeccapurple;
+        }
+
+        .destaque {
+            padding-left: 3rem;
+        }
+
+        p:not(.destaque) {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem <b>ipsum</b> dolor <a href="#">sit amet <b>consectetur.</b></a></p>
+    <article>
+        <p>Lorem <b>ipsum</b> dolor <a href="#">sit amet <b>consectetur.</b></a></p>
+        <h3>Titulo Coisado</h3>
+        <p>Lorem ipsum dolor <a href="#">sit amet <b>consectetur.</b></a></p>
+        <p class="destaque">Lorem ipsum dolor <a href="#">sit amet <b>consectetur.</b></a></p>
+        <p>Lorem ipsum dolor <a href="#">sit amet <b>consectetur.</b></a></p>
+    </article>
+    <p>Lorem <b>ipsum</b> dolor <a href="#">sit amet <b>consectetur.</b></a></p>
+</body>
+</html>

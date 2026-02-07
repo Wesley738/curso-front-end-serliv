@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-coisas</title>
+    <style>
+        p:has(.teste) {
+            background-color: #e3cdaf;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 30%;
+        }
+
+        th, td {
+            border-bottom: 1px solid darkgoldenrod;
+            padding: .5em;
+        }
+
+        th {
+            background-color: #e3cdaf;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f1f0;
+        }
+
+        tr:hover {
+            background-color: bisque;
+        }
+
+        tr:has(input[type="checkbox"]:checked) {
+            color: brown;
+        }
+
+        input {
+            accent-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox">Fulano</input></label></td>
+            <td>fulano@gmail.com</td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox">Siclano</input></label></td>
+            <td>siclano@gmail.com</td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox">Dicano</input></label></td>
+            <td>dicano@gmail.com</td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox">Indivíduo</input></label></td>
+            <td>individuo@gmail.com</td>
+        </tr>
+    </table>
+    <hr>
+    <p>Lorem ipsum dolor sit, amet <a href="#">Clique aqui</a> consectetur adipisicing elit. Minus vel molestiae consequuntur perferendis nihil, illo odit eaque dicta officiis in.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing <a href="#" class="teste">Aqui também</a> elit. Minus vel molestiae consequuntur perferendis nihil, illo odit eaque dicta officiis in.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus vel molestiae consequuntur perferendis nihil, illo odit eaque dicta officiis in.</p>
+</body>
+</html>
