@@ -14,42 +14,38 @@
             padding: auto;
         }
 
-        label div{
+        label span {
             display: inline-block;
-            width: 25px;
-            height: 25px;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
             background-color: red;
             cursor: pointer;
         }
 
-        input[type="checkbox"]:checked+label div  {
+        input[type="checkbox"]:checked+label span  {
             background-color: blue;
-        }
-        
-        input[type="checkbox"]:checked+label span {
-            display: inline-block;
-            width: 14px;
-            height: 6px;
-            border-left: 3px solid white;
-            border-bottom: 3px solid white;
-            transform: translate(4px) rotate(-40deg);
+            position: relative;
         }
 
-        
+        input[type="checkbox"]:checked+label span::before {
+            content: "";
+            display: block;
+            border: .1em solid white;
+            position: absolute;
+            top: .1em;
+            bottom: .31em;
+            left: .34em;
+            right: .31em;
+            transform: rotate(45deg);
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
     </style>
 </head>
 <body>
     <h1>Checkbox</h1>
-
-    <input type="checkbox" id="html">
-    <label for="html">
-        <div>
-            <span></span>
-        </div>
-        HTML
-    </label>
-
-    <!-- <input type="checkbox" id="html">
+    <input type="checkbox" id="html" checked>
     <label for="html">
         <span></span>
         HTML
@@ -63,6 +59,6 @@
     <label for="js">
         <span></span>
         JavaScript
-    </label> -->
+    </label>
 </body>
 </html>
