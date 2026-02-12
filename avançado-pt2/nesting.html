@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting</title>
+    <style>
+        /* .container .div1 {
+            background-color: rebeccapurple;
+        } */
+
+        .div1 {
+            background-color: yellow;
+        }
+
+        .container {
+            color: brown;
+            .div1 {
+                background-color: blanchedalmond;
+            }
+        }
+
+
+        .paragrafo {
+            &.destaque {
+                color: chartreuse;
+            }
+        }
+
+        a {
+            &:hover {
+                color: blueviolet;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <p class="paragrafo">Lorem ips um <b>dolor</b> sit amet.</p>
+        </div>
+        <div class="div2">
+            <p class="paragrafo destaque">Lorem ipsum <b>dolor</b> sit amet.</p>
+        </div>
+        <a href="#">Link</a>
+    </div>
+    <div class="div1">
+        <p>Lorem ips um <b>dolor</b> sit amet.</p>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum <b>dolor</b> sit amet.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        body {
+            margin-bottom: 100vh;
+        }
+        div {
+            outline: 1px solid #888;
+            margin: .5em auto;
+            width: 200px;
+        }
+
+        p {
+            width: 50%;
+        }
+
+        .destaque {
+            background-color: yellow;
+        }
+
+        .div1 .destaque {
+            transform: translate(50%, 80%); /*Percentual relativo ao tamanho do próprio elemento*/
+        }
+
+        .div2 .destaque {
+            position: relative;
+            left: 50%; /*Percentual relativo ao tamanho do elemento pai*/
+        }
+
+        .div3 .destaque {
+            transform: rotate(15deg);
+        }
+
+        .div4 .destaque {
+            transform: scale(.5, 1);
+        }
+
+        .div5 .destaque {
+            transform: skew(45deg, 15deg);
+        }
+
+        .div6 .destaque {
+            transform: translate(200px) rotate(30deg);
+            transform-origin: 0 100% ; /*Pode-se utilizar porcentagem e valores */
+        }
+        
+        .div7 .destaque {
+            transform: rotate(30deg) translate(200px);
+            transform-origin: 0 bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+    </div>
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+    </div>
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+    </div>
+    <div class="div5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+    </div>
+    <div class="div6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+    </div>
+    <div class="div7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque?</p>
+    </div>
+</body>
+</html>

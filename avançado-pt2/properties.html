@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <style>
+        @property --success-color {
+            syntax: "<color>";
+            inherits: false;
+            initial-value: green;
+        }
+
+        @property --angle {
+            syntax: "<angle>";
+            inherits: false;
+            initial-value: 0deg;
+        }
+
+        body {
+            --success-color: orange;
+            color: whitesmoke;
+            background-color: black;
+        }
+
+        b {
+            color: var(--success-color, red);
+        }
+
+        .anima {
+            width: 200px;
+            height: 200px;
+            background-color: var(--success-color, blue);
+            transform: rotate(var(--angle));
+            animation: rotate 5s linear infinite;
+        }
+
+        @keyframes rotate {
+            to {
+                --angle: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <p>Lorem ips um <b>dolor</b> sit amet.</p>
+        </div>
+        <div class="div2">
+            <p>Lorem ipsum <b>dolor</b> sit amet.</p>
+        </div>
+    </div>
+
+    <div class="anima">Anima</div>
+</body>
+</html>
