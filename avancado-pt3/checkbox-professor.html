@@ -95,11 +95,11 @@
 
         .lbl3 span {
             display: inline-block;
-            width: 24px;
-            height: 12px;
+            width: 2em;
+            height: 1em;
             background-color: #f84545;
-            border-radius: 10px;
-            border: 1px solid #f84545;
+            border-radius: 1em;
+            border: 2px solid #f84545;
             transition: background-color .3s, border .3s;
             position: relative;
         }
@@ -107,24 +107,24 @@
         .chk3+span::before {
             display: inline-block;
             content: "";
-            width: 10px;
-            height: 10px;
+            width: 1em;
+            height: 1em;
             background-color: white;
-            transform: translate(1px, -3px);
+            transform: translate(0);
             border-radius: 50%;
             transition: transform .4s;
         }
 
         .chk3:checked+span {
             background-color: #23ec6d;
-            border: 1px solid #23ec6d;
+            border: 2px solid #23ec6d;
             
 
         }
 
         .chk3:checked+span::before {
             background-color: white;
-            transform: translate(12px, -3px);
+            transform: translate(100%);
         }
 
         .lbl3 input[type="checkbox"] {
@@ -140,6 +140,49 @@
         .lbl3 input[type="checkbox"]:focus+span {
             outline: 1px solid black;
             outline-offset: 1px;
+        }
+
+        /*Solução do Professor*/
+        .switch {
+            --switch-color: #cfd8dc;
+        }
+
+        .switch span {
+            display: inline-block;
+            width: 2em;
+            height: 1em;
+            border-radius: 1em;
+            border: 2px solid var(--switch-color);
+        }
+
+        .switch span::after {
+            content: "";
+            display: block;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background-color: red;
+            transition: transform .2s ease-in-out;
+            transform: translateX(0);
+        }
+
+        .switch input:checked+span::after {
+            transform: translateX(100%);
+        }
+
+        .switch input[type="checkbox"] {
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            outline: none;
+        }
+
+        .switch .chk4:focus+span {
+            outline: 2px solid black;
+            outline-offset: 2px;
         }
     </style>
 </head>
@@ -192,5 +235,25 @@
         <span></span>
         JavaScript
     </label>
+    <hr>
+    <label class="switch">
+        <input type="checkbox" class="chk4" checked>
+        <span></span>
+        HTML
+    </label>
+    <label class="switch">
+        <input type="checkbox" class="chk4">
+        <span></span>
+        CSS
+    </label>
+    <label class="switch">
+        <input type="checkbox" class="chk4">
+        <span></span>
+        JavaScript
+    </label>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
