@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Components</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#">
+                <img src="imagens/perfil.png" alt="Pessoa Aleatória" class="perfil-img">
+            </a>
+            <ul>
+                <li><a href="mycomponents.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formulario.html">Formulários</a></li>
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="tabela.html">Tabela</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>My Components</h1>
+        <article class="hightlight">
+            <h2>Tipografia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus, aliquam accusamus unde repudiandae dolores nesciunt sit corrupti? Nostrum excepturi odio quibusdam, sapiente error explicabo.</p>
+        </article>
+        <section>
+            <article>
+                <h4>Textos</h4>
+                <p>Lorem ipsum dolor <b>sit amet</b> (Importância meramente visual) consectetur adipisicing elit. <strong>Minima</strong> (Importância visual e semântica), eveniet.</p>
+                <p>Lorem <i>ipsum</i> (Importância visual) dolor sit <em>amet</em> (importância visual e semântica).</p>
+                <p>Lorem <u class="underline">ipsum</u> (tag "u", porém não pode ser usado como underline, mas sim como um destaque não textual) dolor sit <a href="#">amet.</a> (link)</p>
+            </article>
+            <article>
+                <h4>Sobrescrito e Subescrito</h4>
+                <p>3<sup>2</sup> = 9</p>
+                <p>A fórmula da água é H<sub>2</sub>O</p>
+            </article>
+            <article>
+                <h4>Abreviações</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At consectetur minus, corporis <a href="#html"><abbr title="Hipertext Marrkup Language">HTML</abbr></a> quaerat enim nulla et dolores modi reprehenderit quo fugit tempore quisquam fugiat mollitia? Dolor quam tempora ad neque.</p>
+                <p>Lorem ipsum dolor <dfn id="html"><abbr title="Hipertext Markup Language">HTML</abbr></dfn> sit amet.</p>
+                <!-- O <dfn> serve para marcar uma definição, o <abbr> serve para marcar a abreviação. No <dfn>, a tag p, dd, td, article ancestral é identificada como a definição da abreviação contida dentro da mesma-->
+            </article>
+            <article>
+                <h4>Citações</h4>
+                <blockquote cite="https://google.com">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iure aliquid sed recusandae. Itaque nemo sed exercitationem adipisci distinctio. Autem natus velit at unde, commodi expedita. Veritatis sed eum nihil.</p>
+                    <cite>Autor Desconhecido</cite>
+                </blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <q cite="https//google.com">Labore ullam accusantium distinctio atque.</q> Vel aperiam enim aut, rem quisquam aliquam quo doloribus, dolores repudiandae ipsa eaque molestiae exercitationem perferendis sint.</p>
+                <p>O filme <cite>Vingadores</cite> é bem antigo em relação a hoje</p>
+            </article>
+            <article>
+                <h4>"Coisas" de Computador</h4>
+                <p>Lorem ipsum <code>Olá mundo</code> dolor sit amet consectetur.</p>
+                <pre> <!--Texto pré-formatado-->
+                    <code>
+                        console.log("Olá Mundo")
+                        let a = 5
+                        let b = 4
+                        let c = a + b
+                        console.log("A soma de 9")
+                    </code> <!--Tag de código-->
+                </pre>
+                <p>O erro 404 diz: <samp>ERRO: página não encontrada</samp></p>
+                <p>Pressione as teclas <kbd>CTRL</kbd> + <kbd>C</kbd> para copiar</p>
+            </article>
+            <article>
+                <h4>Data e horários</h4>
+                
+            </article>
+        </section>
+    </main>
+</body>
+</html>

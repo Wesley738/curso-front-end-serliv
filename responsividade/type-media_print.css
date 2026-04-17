@@ -1,0 +1,9 @@
+.hero {
+    background-color: rgb(188, 214, 238);
+    color: rgb(198, 0, 195);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a::after {
+    content: "(" attr(href) ") - (" attr(title) ")";
+}
